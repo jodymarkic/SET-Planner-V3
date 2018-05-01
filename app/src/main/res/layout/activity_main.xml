@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- Filename     : simplerow.xml
+- Project      : SETPlanner
+- Author       : Nathan Bray, Jody Markic, Gabriel Paquette
+- Date Created : 2017-02-03
+- Description  : This file contains the xml structured code for the Course activity
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="conestogac.hats.mad.setplanner.MainActivity">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:completionThreshold="1"
+        android:focusableInTouchMode="true"
+        android:hint="@string/enter_a_course"
+        android:inputType="text"
+        android:maxLength="30"
+        android:maxLines="1" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/editText"
+        android:drawSelectorOnTop="false"
+
+        />
+
+    <Button
+        android:id="@+id/add_course_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/roundedbutton"
+        android:minWidth="48dip"
+        android:text="@string/add_course_button_text"
+        android:textSize="25sp" />
+
+
+</RelativeLayout>

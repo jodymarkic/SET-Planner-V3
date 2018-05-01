@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- Filename     : project_layout.xml
+- Project      : SETPlanner
+- Author       : Nathan Bray, Jody Markic, Gabriel Paquette
+- Date Created : 2017-02-03
+- Description  : This file defines the layout for a given list item in the project and schedule
+- pages
+-->
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+
+    <TextView
+        android:id="@+id/courseName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/course_name"/>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_2017_12_12"
+        android:layout_row="0"
+        android:layout_column="3" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/incomplete"
+        android:layout_row="1"
+        android:layout_column="3" />
+
+    <TextView
+        android:id="@+id/projName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/projname"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:textColor="@android:color/black"
+        android:textSize="21sp"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:paddingTop="10dp" />
+
+</GridLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+- Filename     : simplerow.xml
+- Project      : SETPlanner
+- Author       : Nathan Bray, Jody Markic, Gabriel Paquette
+- Date Created : 2017-02-03
+- Description  : This file is used to provide a template for what the Course list should look like
+-->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rowTextView"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:textSize="16sp" >
+</TextView>
